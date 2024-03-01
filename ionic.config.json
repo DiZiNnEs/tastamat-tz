@@ -1,0 +1,7 @@
+{
+  "name": "tastamat-tz",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
