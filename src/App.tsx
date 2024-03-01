@@ -60,19 +60,19 @@ const App: React.FC = () => (
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/orders">
             <IonIcon aria-hidden="true" icon={addOutline} />
-            <IonLabel>ВЛОЖИТЬ</IonLabel>
+            <IonLabel>Вложить</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
             <IonIcon aria-hidden="true" icon={locationOutline} />
-            <IonLabel>ТАСТАМАТЫ</IonLabel>
+            <IonLabel>Тастаматы</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
             <IonIcon aria-hidden="true" icon={reorderFourOutline} />
-            <IonLabel>ЗАКАЗЫ</IonLabel>
+            <IonLabel>Заказы</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab4" href="/tab4">
             <IonIcon aria-hidden="true" icon={personOutline} />
-            <IonLabel>ПРОФИЛЬ</IonLabel>
+            <IonLabel>Профиль</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>

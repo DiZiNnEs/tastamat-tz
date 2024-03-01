@@ -5,8 +5,7 @@ ion-tab-button {
   --padding-end: 0px;
   --padding-start: 10px;
   --padding-bottom: 0px;
-  --margin-left: 0px;
-  --margin-right: 0px;
+  padding: 0 0 15px;
   ion-icon {
     font-size: 30.5px;
   }
@@ -17,5 +16,6 @@ ion-tab-bar {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 70px;
+  height: 80px;
+  text-transform: uppercase;
 }
