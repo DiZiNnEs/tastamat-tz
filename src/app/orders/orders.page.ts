@@ -1,7 +1,21 @@
 import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonIcon, IonLabel, IonTabButton } from '@ionic/angular/standalone';
+import {
+  IonHeader,
+  IonToolbar,
+  IonTitle,
+  IonContent,
+  IonButton,
+  IonIcon,
+  IonLabel,
+  IonTabButton,
+  IonList,
+  IonItem,
+  IonNote,
+  IonBadge,
+  IonText
+} from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { timeOutline, chevronForwardOutline } from 'ionicons/icons';
+import { timeOutline, chevronForwardOutline, arrowUpCircleOutline } from 'ionicons/icons';
 
 import { ExploreContainerComponent } from '../components/explore-container/explore-container.component';
 
@@ -10,10 +24,10 @@ import { ExploreContainerComponent } from '../components/explore-container/explo
     templateUrl: 'orders.page.html',
     styleUrls: ['orders.page.scss'],
     standalone: true,
-    imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent, IonButton, IonIcon, IonLabel, IonTabButton],
+  imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent, IonButton, IonIcon, IonLabel, IonTabButton, IonList, IonItem, IonNote, IonBadge, IonText],
 })
 export class OrdersPage {
     constructor() {
-        addIcons({ timeOutline, chevronForwardOutline })
+        addIcons({ timeOutline, chevronForwardOutline, arrowUpCircleOutline })
     }
 }
