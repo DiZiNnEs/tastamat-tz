@@ -1,0 +1,145 @@
+ion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: none;
+  .header-info {
+    display: flex;
+    align-items: center;
+
+    ion-icon {
+      height: 65px;
+      width: 65px;
+    }
+  }
+
+  ion-list {
+    ion-item {
+      border-radius: 20px;
+    }
+    padding: 5px!important;
+  }
+}
+
+ion-content {
+
+
+  ion-grid {
+    ion-row {
+      ion-col {
+        .index {
+          display: flex;
+          gap: 5px;
+          align-items: end;
+          p {
+            font-weight: 500;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    ion-row.status {
+      border: 2px solid grey;
+      border-left: none;
+      border-right: none;
+
+      ion-col {
+        ion-text {
+          p.status-text {
+            text-transform: uppercase;
+          }
+        }
+      }
+      .mode-work {
+        border-left: 2px solid grey;
+        div {
+          display: flex;
+
+          ion-text {
+            p:before {
+              content: '\229D';
+            }
+          }
+        }
+
+      }
+      padding: 20px 0;
+
+      p {
+        padding: 0;
+        margin: 0;
+      }
+
+      ion-col {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 0 10px;
+        justify-content: center;
+      }
+
+      .tastamat-status:before {
+        content: ' \2022';
+      }
+
+    }
+
+    ion-row.instructions {
+      border: 2px solid grey;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+
+      ion-col {
+        ion-text {
+          p {
+            text-transform: uppercase;
+          }
+        }
+      }
+      //ol {
+      //  list-style: none;
+      //  li {
+      //    color: #2dd36f;
+      //  }
+      //  li:before {
+      //    content: " \2705";
+      //  }
+      //}
+    }
+
+
+    ion-card {
+      aspect-ratio: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      ion-card-header {
+        ion-card-title {
+          text-align: center;
+          font-weight: 600;
+          position: relative;
+          z-index: 1;
+          font-size: 100%;
+        }
+      }
+
+      ion-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 110%;
+        height: 110%;
+        opacity: .5;
+        bottom: 0;
+        right: 0;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+

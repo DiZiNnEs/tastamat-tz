@@ -1,15 +1,112 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Get package page</ion-title>
-  </ion-toolbar>
+<ion-header lines="none" [translucent]="true">
+  <div class="header-info">
+    <ion-icon color="primary" size="large" name="basketball-outline"></ion-icon>
+    <ion-text color="dark">
+      <p>Испольнитель: <a href="#">Тастамат</a></p>
+      <p>Трек-номер: <a href="#">834410</a></p>
+    </ion-text>
+  </div>
+
+  <ion-list>
+    <ion-item color="primary">
+      <ion-select aria-label="Favorite Fruit" value="apple">
+        <ion-select-option value="apple">ru</ion-select-option>
+        <ion-select-option value="banana">kz</ion-select-option>
+        <ion-select-option value="orange">en</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Get package page</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid>
+    <ion-row class="ion-align-items-start">
+      <ion-col size="7" size-sm="8" size-md="9">
+        <ion-text>
+          <div class="index">
+            <h5>Индекс </h5>
+            <h4>910043</h4>
+          </div>
 
-  <app-explore-container name="Get package"></app-explore-container>
+          <h5>BI City Seoul, Блок "Н", подъезд №7</h5>
+          <p>Нур-Султан (Астана), ул. Е-49, д.1/2, 1/2</p>
+          <p>Терминал находится в тамбуре 7 подъезда, в блоке "H", вход со стороны улицы ЕК-32, возле "EASY BAR", Индекс
+            910002</p>
+        </ion-text>
+      </ion-col>
+      <ion-col size="5" size-sm="4" size-md="3">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title color="primary">Посмотреть на карте</ion-card-title>
+          </ion-card-header>
+          <ion-img
+            src="https://banner2.cleanpng.com/20180308/xsq/kisspng-globe-google-maps-location-clip-art-map-navigation-5aa156e39c8ee6.7794537515205229796413.jpg"></ion-img>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="status">
+      <ion-col>
+        <ion-text>
+          <p class="status-text">Состояние</p>
+        </ion-text>
+        <ion-text color="success">
+          <p class="tastamat-status">Тастамат работает</p>
+        </ion-text>
+      </ion-col>
+      <ion-col class="mode-work">
+        <div>
+          <ion-icon></ion-icon>
+          <ion-text>
+            <p>Режим работы 24/7</p>
+          </ion-text>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="instructions">
+      <ion-col>
+        <ion-text>
+          <p>Инструкция</p>
+        </ion-text>
+        <ol>
+          <li>Оплатите посылку</li>
+          <li>Оплатите доставку</li>
+          <li>Пройдите по адресу указанному выше</li>
+          <li>Введите свой ИИН ниже</li>
+          <li>Нажмите "ОТКРЫТЬ ЯЧЕЙКУ" и разрешите доступ к камере</li>
+          <li>Система предложит отсканировать или ввести вручную QR-код тастамата (в зависимости от настроек
+            смартфона)
+          </li>
+          <li>Откроется ячейка - заберите заказ и закройте ячейку</li>
+        </ol>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-text>
+          <p>Введите свой ИИН</p>
+        </ion-text>
+
+        <ion-item>
+          <ion-input placeholder="930072263012"></ion-input>
+        </ion-item>
+        <ion-text>
+          <p>Согласно требованию законодательствоа РК "О почте" от 09 апреля 2016 года № 498-V необходимо ввести свой
+            ИИН для получения посылки.</p>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="ion-text-center ion-text-uppercase ion-margin-top">
+        <ion-button size="default" color="primary">Открыть ячейку</ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-img class="ion-margin-top" src="../../assets/tastamat-get-orders-footer.jpeg"></ion-img>
+
 </ion-content>

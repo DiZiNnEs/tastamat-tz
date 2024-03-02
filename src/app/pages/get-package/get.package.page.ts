@@ -1,13 +1,27 @@
 import { Component } from '@angular/core';
-import {IonApp, IonContent, IonHeader, IonRouterOutlet, IonTitle, IonToolbar} from '@ionic/angular/standalone';
+import {
+  IonApp, IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCol,
+  IonContent, IonGrid,
+  IonHeader,
+  IonIcon, IonImg, IonInput, IonItem, IonLabel, IonList,
+  IonRouterOutlet, IonRow, IonSelect, IonSelectOption,
+  IonText,
+  IonTitle,
+  IonToolbar
+} from '@ionic/angular/standalone';
 import {ExploreContainerComponent} from "../../components/explore-container/explore-container.component";
+import {basketballOutline} from "ionicons/icons";
+import {addIcons} from "ionicons";
 
 @Component({
   selector: 'app-get-package-page',
   templateUrl: 'get.package.page.html',
+  styleUrls: ['get.package.page.scss'],
   standalone: true,
-  imports: [IonApp, IonRouterOutlet, ExploreContainerComponent, IonContent, IonHeader, IonTitle, IonToolbar],
+  imports: [IonApp, IonRouterOutlet, ExploreContainerComponent, IonContent, IonHeader, IonTitle, IonToolbar, IonIcon, IonText, IonList, IonItem, IonSelect, IonSelectOption, IonGrid, IonRow, IonCol, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonCardSubtitle, IonImg, IonLabel, IonInput, IonButton],
 })
 export class GetPackagePage {
-  constructor() {}
+  constructor() {
+    addIcons({basketballOutline})
+  }
 }
