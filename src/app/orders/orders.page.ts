@@ -14,6 +14,7 @@ import {
   IonBadge,
   IonText
 } from '@ionic/angular/standalone';
+import {RouterLink} from "@angular/router";
 import { addIcons } from 'ionicons';
 import { timeOutline, chevronForwardOutline, arrowUpCircleOutline } from 'ionicons/icons';
 
@@ -24,7 +25,7 @@ import { ExploreContainerComponent } from '../components/explore-container/explo
     templateUrl: 'orders.page.html',
     styleUrls: ['orders.page.scss'],
     standalone: true,
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent, IonButton, IonIcon, IonLabel, IonTabButton, IonList, IonItem, IonNote, IonBadge, IonText],
+  imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent, IonButton, IonIcon, IonLabel, IonTabButton, IonList, IonItem, IonNote, IonBadge, IonText, RouterLink],
 })
 export class OrdersPage {
     constructor() {

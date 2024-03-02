@@ -27,6 +27,11 @@ export const routes: Routes = [
           import('../put-package/put.package.page').then((m) => m.PutPackagePage),
       },
       {
+        path: 'get-package',
+        loadComponent: () =>
+          import('../pages/get-package/get.package.page').then((m) => m.GetPackagePage),
+      },
+      {
         path: '',
         redirectTo: '/profile',
         pathMatch: 'full',
