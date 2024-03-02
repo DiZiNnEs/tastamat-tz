@@ -9,6 +9,7 @@ const Orders: React.FC = () => {
             <h1>Мои Заказы</h1>
         </div>
       </div>
+      <h1>Мои Заказы</h1>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
