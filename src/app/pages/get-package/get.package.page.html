@@ -1,5 +1,11 @@
 <ion-header lines="none" [translucent]="true">
+
+
   <div class="header-info">
+      <ion-buttons slot="start">
+        <ion-back-button text="" color="primary" defaultHref="/tabs/orders"></ion-back-button>
+      </ion-buttons>
+
     <ion-icon color="primary" size="large" name="basketball-outline"></ion-icon>
     <ion-text color="dark">
       <p>Испольнитель: <a href="#">Тастамат</a></p>
@@ -19,6 +25,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
   <ion-grid>
     <ion-row class="ion-align-items-start">
       <ion-col size="7" size-sm="8" size-md="9">
