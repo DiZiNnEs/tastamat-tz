@@ -19,7 +19,7 @@ export const routes: Routes = [
       {
         path: 'tastamats',
         loadComponent: () =>
-          import('../tastamats/tastamats.page').then((m) => m.TastamatsPage),
+          import('../pages/tastamats/tastamats.page').then((m) => m.TastamatsPage),
       },
       {
         path: 'put-package',
