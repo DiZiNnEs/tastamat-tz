@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {IonicModule} from "@ionic/angular";
 
 @Component({
@@ -11,7 +11,13 @@ import {IonicModule} from "@ionic/angular";
   standalone: true
 })
 export class OrderItemComponent implements OnInit {
-
+  @Input() order!: {
+    id: number,
+    name: string,
+    status: boolean,
+    statusText: string,
+    leftTime: string
+  };
   constructor() { }
 
   ngOnInit() {}
