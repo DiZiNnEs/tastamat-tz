@@ -18,8 +18,8 @@ import {RouterLink} from "@angular/router";
 import { addIcons } from 'ionicons';
 import { timeOutline, chevronForwardOutline, arrowUpCircleOutline } from 'ionicons/icons';
 
-import { ExploreContainerComponent } from '../components/explore-container/explore-container.component';
-import {GetPackagePage} from "../pages/get-package/get.package.page";
+import { ExploreContainerComponent } from '../../components/explore-container/explore-container.component';
+import {GetPackagePage} from "../get-package/get.package.page";
 
 @Component({
     selector: 'app-orders-page',

@@ -14,7 +14,7 @@ export const routes: Routes = [
       {
         path: 'orders',
         loadComponent: () =>
-          import('../orders/orders.page').then((m) => m.OrdersPage),
+          import('../pages/orders/orders.page').then((m) => m.OrdersPage),
       },
       {
         path: 'tastamats',
