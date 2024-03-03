@@ -20,13 +20,14 @@ import { timeOutline, chevronForwardOutline, arrowUpCircleOutline } from 'ionico
 
 import { ExploreContainerComponent } from '../../components/explore-container/explore-container.component';
 import {GetPackagePage} from "../get-package/get.package.page";
+import {HeaderComponent} from "../../components/header/header.component";
 
 @Component({
     selector: 'app-orders-page',
     templateUrl: 'orders.page.html',
     styleUrls: ['orders.page.scss'],
     standalone: true,
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent, IonButton, IonIcon, IonLabel, IonTabButton, IonList, IonItem, IonNote, IonBadge, IonText, RouterLink, IonNavLink],
+    imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent, IonButton, IonIcon, IonLabel, IonTabButton, IonList, IonItem, IonNote, IonBadge, IonText, RouterLink, IonNavLink, HeaderComponent],
 })
 export class OrdersPage {
     component = GetPackagePage
