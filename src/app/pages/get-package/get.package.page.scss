@@ -99,15 +99,22 @@ ion-content {
           }
         }
       }
-      //ol {
-      //  list-style: none;
-      //  li {
-      //    color: #2dd36f;
-      //  }
-      //  li:before {
-      //    content: " \2705";
-      //  }
-      //}
+
+      ol {
+        //padding: 0;
+      }
+
+      .non-complete {
+        padding-left: 0;
+      }
+      .complete {
+        //padding-right: 60px !important;
+        display: block;
+        list-style: none;
+      }
+      .complete:before {
+        content: " \2705";
+      }
     }
 
 
