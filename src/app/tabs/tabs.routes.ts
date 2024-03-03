@@ -24,7 +24,7 @@ export const routes: Routes = [
       {
         path: 'put-package',
         loadComponent: () =>
-          import('../put-package/put.package.page').then((m) => m.PutPackagePage),
+          import('../pages/put-package/put.package.page').then((m) => m.PutPackagePage),
       },
       {
         path: 'get-package',
