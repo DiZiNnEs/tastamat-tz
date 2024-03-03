@@ -2,9 +2,9 @@
 
 
   <div class="header-info">
-      <ion-buttons slot="start">
-        <ion-back-button text="" color="primary" defaultHref="/main/orders"></ion-back-button>
-      </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-back-button text="" color="primary" defaultHref="/main/orders"></ion-back-button>
+    </ion-buttons>
 
     <ion-icon color="primary" size="large" name="basketball-outline"></ion-icon>
     <ion-text color="dark">
@@ -108,10 +108,9 @@
 
     <ion-row>
       <ion-col class="ion-text-center ion-text-uppercase ion-margin-top">
-        <ion-button size="default" color="primary">Открыть ячейку</ion-button>
+        <ion-button (click)="scanQr()" size="default" color="primary">Открыть ячейку</ion-button>
       </ion-col>
     </ion-row>
-
   </ion-grid>
 
   <ion-img class="ion-margin-top" src="../../assets/tastamat-get-orders-footer.jpeg"></ion-img>
