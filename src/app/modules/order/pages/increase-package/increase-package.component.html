@@ -1,0 +1,35 @@
+<app-header [title]="title" [backOptions]="headerOpt"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item lines="none">
+      <ion-label>
+        <h6>Дата продления с:</h6>
+        <span>27 марта, 11:23</span>
+      </ion-label>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label>
+        <h6>Дата продления по:</h6>
+        <span>28 марта, 11:23</span>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h6>Оплата услуги</h6>
+        <p>Баланс: 2 500тг. </p>
+        <h6>Стоимость: 100тг.</h6>
+      </ion-label>
+      <ion-badge class="status-badge">
+        <span>Пополнить</span>
+      </ion-badge>
+    </ion-item>
+
+
+    <ion-item lines="none">
+      <ion-button color="primary" size="large">Оплатить</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

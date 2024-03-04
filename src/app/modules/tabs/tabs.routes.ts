@@ -36,6 +36,10 @@ export const routes: Routes = [
         loadComponent: () => import('../order/pages/order-single/order.single.page').then((m) => m.OrderSinglePage)
       },
       {
+        path: 'order-increase',
+        loadComponent: () => import('../order/pages/increase-package/increase-package.component').then((m) => m.IncreasePackageComponent)
+      },
+      {
         path: '',
         redirectTo: '/profile',
         pathMatch: 'full',
