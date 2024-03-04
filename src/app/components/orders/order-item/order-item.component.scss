@@ -1,19 +1,16 @@
-ion-item {
-  --padding-start: 0;
-  margin: 10px 0;
+ion-list {
+  display: block;
+  width: 100%;
+  margin: 5px!important;
 
-  h5 {
-    font-weight: 600;
+  ion-icon {
+    color: #F15A29;
+    margin-right: 10px;
   }
 
-  ion-badge {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 24px;
+  ion-button {
     gap: 10px;
-    background: rgba(242, 100, 54, 0.1);
-    color: #F26436;
-    padding: 0px 10px;
+    border-radius: 8px;
+    text-transform: none;
   }
 }
