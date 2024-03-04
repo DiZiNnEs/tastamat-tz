@@ -60,4 +60,4 @@ npx cap open ios
 ### Android APK - `android/app/build/outputs/apk/debug/app-debug.apk`
 
 ## Gif APK
-![](https://github.com/DiZiNnEs/tastamat-tz/blob/master/gif/result.gif)
+![](https://github.com/DiZiNnEs/tastamat-tz/blob/master/gifs/result.gif)
