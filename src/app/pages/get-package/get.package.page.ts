@@ -30,7 +30,7 @@ import {
 import {ExploreContainerComponent} from "../../components/explore-container/explore-container.component";
 import {basketballOutline} from "ionicons/icons";
 import {addIcons} from "ionicons";
-import {QrService} from "../../services/qr/qr.service";
+import {QrService} from "../../core/services/qr/qr.service";
 
 @Component({
   selector: 'app-get-package-page',
