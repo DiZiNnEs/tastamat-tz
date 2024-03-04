@@ -1,0 +1,36 @@
+.status-badge {
+  border-radius: 24px;
+  gap: 10px;
+  background: rgba(242, 100, 54, 0.1);
+  --color: var(--ion-color-primary);
+}
+
+.cancel-button {
+  color: #151C22;
+  background: var(--ion-color-cancel);
+}
+
+ion-content {
+  ion-list {
+    display: block;
+    width: 100%;
+    margin: 5px !important;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h6 {
+    font-weight: 600;
+    color: rgba(60, 60, 67, 0.6);
+  }
+
+  ion-item {
+    ion-button {
+      border-radius: 8px;
+      gap: 10px;
+      width: 100%;
+    }
+  }
+}
