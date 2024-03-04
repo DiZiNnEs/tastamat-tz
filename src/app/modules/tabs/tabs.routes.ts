@@ -9,31 +9,31 @@ export const routes: Routes = [
       {
         path: 'profile',
         loadComponent: () =>
-          import('../modules/profile/profile.page').then((m) => m.ProfilePage),
+          import('../profile/profile.page').then((m) => m.ProfilePage),
       },
       {
         path: 'orders',
         loadComponent: () =>
-          import('../modules/order/pages/orders/orders.page').then((m) => m.OrdersPage),
+          import('../order/pages/orders/orders.page').then((m) => m.OrdersPage),
       },
       {
         path: 'tastamats',
         loadComponent: () =>
-          import('../modules/tastamats/tastamats.page').then((m) => m.TastamatsPage),
+          import('../tastamats/tastamats.page').then((m) => m.TastamatsPage),
       },
       {
         path: 'put-package',
         loadComponent: () =>
-          import('../modules/put-package/put.package.page').then((m) => m.PutPackagePage),
+          import('../put-package/put.package.page').then((m) => m.PutPackagePage),
       },
       {
         path: 'get-package',
         loadComponent: () =>
-          import('../modules/get-package/get.package.page').then((m) => m.GetPackagePage),
+          import('../get-package/get.package.page').then((m) => m.GetPackagePage),
       },
       {
         path: 'order-single/:id',
-        loadComponent: () => import('../modules/order/pages/order-single/order.single.page').then((m) => m.OrderSinglePage)
+        loadComponent: () => import('../order/pages/order-single/order.single.page').then((m) => m.OrderSinglePage)
       },
       {
         path: '',
