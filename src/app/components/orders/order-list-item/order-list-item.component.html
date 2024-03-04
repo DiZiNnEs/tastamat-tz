@@ -1,0 +1,13 @@
+<ion-item [button]="true">
+  <ion-icon [color]="order.status ? 'primary' : 'success'" slot="start" size="large" [name]="order.status ? 'arrow-up-circle-outline' : 'arrow-down-circle-outline' "></ion-icon>
+  <ion-label>
+    <h5>{{order.name}}</h5>
+    <p>{{order.statusText}}</p>
+  </ion-label>
+
+  <ion-badge slot="end">
+    <ion-icon name="time-outline" size="large"></ion-icon>
+    <h5>{{order.leftTime}}</h5>
+  </ion-badge>
+
+</ion-item>

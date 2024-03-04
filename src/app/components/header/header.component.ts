@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {IonicModule} from "@ionic/angular";
 
 @Component({
@@ -11,7 +11,7 @@ import {IonicModule} from "@ionic/angular";
   standalone: true
 })
 export class HeaderComponent implements OnInit {
-
+  @Input() title!: string;
   constructor() { }
 
   ngOnInit() {

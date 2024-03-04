@@ -1,14 +1,10 @@
-<ion-item [button]="true">
-  <ion-icon color="primary" slot="start" size="large" name="arrow-up-circle-outline"></ion-icon>
-  <ion-label>
-    <h5>{{order.name}}</h5>
-    <p>{{order.statusText}}</p>
-  </ion-label>
+<ng-container *ngFor="let order of orders">
+  <ion-text color="medium">
+    <h5>{{dayjs(order.date).locale('ru').format('D MMMM')}}</h5>
+  </ion-text>
 
-  <ion-badge slot="end">
-    <ion-icon name="time-outline" size="large"></ion-icon>
-    <h5>{{order.leftTime}}</h5>
-  </ion-badge>
-
-  <ion-icon color="medium" slot="end" name="chevron-forward-outline" size="large"></ion-icon>
-</ion-item>
+  <ion-list lines="none" [inset]="true" >
+    <app-order-list-item *ngFor="let order of order.data" [order]="order"></app-order-list-item>
+    <ion-button [routerLink]="['/main/get-package']" size='large' expand="block" routerDirection="forward">Получить посылку</ion-button>
+  </ion-list>
+</ng-container>

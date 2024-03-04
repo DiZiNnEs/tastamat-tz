@@ -1,16 +1,7 @@
-<app-header></app-header>
+<app-header [title]="title"></app-header>
 
 <br />
 
 <ion-content class="ion-padding" [fullscreen]="true">
-  <ion-text color="medium">
-    <h5>Сегодня</h5>
-  </ion-text>
-
-  <ion-list lines="none" [inset]="true" >
-    <app-order-item *ngFor="let order of orders[0].data" [order]="order"></app-order-item>
-
-
-    <ion-button [routerLink]="['/main/get-package']" size='large' expand="block" routerDirection="forward">Получить посылку</ion-button>
-  </ion-list>
+  <app-order-item [orders]="orders"></app-order-item>
 </ion-content>
