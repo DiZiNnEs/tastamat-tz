@@ -18,6 +18,10 @@ import {IonicModule} from "@ionic/angular";
 })
 export class OrdersPage {
   title = 'Мои посылки'
+  headerOpt = {
+    isActive: false,
+  }
+
   orders = [
     {
       date: dayjs(), data: [
