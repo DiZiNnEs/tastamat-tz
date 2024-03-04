@@ -1,16 +1,24 @@
 ion-header {
-  background-color: #fa631d;
+  background-color: var(--ion-color-primary);
   ion-toolbar {
+    div.wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
     ion-title {
-      display: block;
+      padding-right: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: #fff;
       text-align: center;
       font-size: 18px;
       font-weight: 500;
       text-transform: uppercase;
-
     }
-    --background: #fa631d;
+
+    --background: var(--ion-color-primary);
     padding-top: 18px;
   }
 }

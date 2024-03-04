@@ -32,6 +32,10 @@ export const routes: Routes = [
           import('../pages/get-package/get.package.page').then((m) => m.GetPackagePage),
       },
       {
+        path: 'order/:id',
+        loadComponent: () => import('../pages/order/order.page').then((m) => m.OrderPage)
+      },
+      {
         path: '',
         redirectTo: '/profile',
         pathMatch: 'full',
