@@ -1,9 +1,9 @@
 import {Component, OnDestroy, OnInit,} from "@angular/core";
 import {IonHeader, IonTitle, IonToolbar} from "@ionic/angular/standalone";
-import {HeaderComponent} from "../../../core/components/header/header.component";
+import {HeaderComponent} from "../../../../core/components/header/header.component";
 import {IonicModule} from "@ionic/angular";
 import {ActivatedRoute} from "@angular/router";
-import {IHeaderOptions} from "../../../core/models/interfaces";
+import {IHeaderOptions} from "../../../../core/models/interfaces";
 
 
 

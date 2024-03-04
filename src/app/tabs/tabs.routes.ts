@@ -14,7 +14,7 @@ export const routes: Routes = [
       {
         path: 'orders',
         loadComponent: () =>
-          import('../modules/order/orders/orders.page').then((m) => m.OrdersPage),
+          import('../modules/order/pages/orders/orders.page').then((m) => m.OrdersPage),
       },
       {
         path: 'tastamats',
@@ -33,7 +33,7 @@ export const routes: Routes = [
       },
       {
         path: 'order-single/:id',
-        loadComponent: () => import('../modules/order/order-single/order.single.page').then((m) => m.OrderSinglePage)
+        loadComponent: () => import('../modules/order/pages/order-single/order.single.page').then((m) => m.OrderSinglePage)
       },
       {
         path: '',
