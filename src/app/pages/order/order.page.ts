@@ -3,6 +3,10 @@ import {IonHeader, IonTitle, IonToolbar} from "@ionic/angular/standalone";
 import {HeaderComponent} from "../../components/header/header.component";
 import {IonicModule} from "@ionic/angular";
 import {ActivatedRoute} from "@angular/router";
+import {IHeaderOptions} from "../../core/models/interfaces";
+
+
+
 @Component({
   selector: 'app-order-page',
   templateUrl: 'order.page.html',
@@ -21,7 +25,7 @@ export class OrderPage implements OnInit, OnDestroy{
   private sub: any;
 
   title = 'Мои посылки'
-  headerOpt = {
+  headerOpt: IHeaderOptions = {
     isActive: true,
     href: '/main/orders'
   }

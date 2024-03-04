@@ -6,6 +6,7 @@ import {OrderListItemComponent} from "../order-list-item/order-list-item.compone
 
 import * as dayjs from "dayjs";
 import 'dayjs/locale/ru'
+import {IOrder} from "../../../core/models/interfaces";
 
 @Component({
   selector: 'app-order-item',
@@ -24,7 +25,7 @@ export class OrderItemComponent implements OnInit {
 
   @Input() orders!: {
     date: dayjs.Dayjs,
-    data: {id: number, name: string, statusText: string, status: boolean, leftTime: string}[]
+    data: IOrder[]
   }[];
   constructor() { }
 

@@ -8,6 +8,7 @@ import {OrderItemComponent} from "../../components/orders/order-item/order-item.
 import * as dayjs from "dayjs";
 import {NgForOf} from "@angular/common";
 import {IonicModule} from "@ionic/angular";
+import {IHeaderOptions} from "../../core/models/interfaces";
 
 @Component({
   selector: 'app-orders-page',
@@ -18,7 +19,7 @@ import {IonicModule} from "@ionic/angular";
 })
 export class OrdersPage {
   title = 'Мои посылки'
-  headerOpt = {
+  headerOpt: IHeaderOptions = {
     isActive: false,
   }
 
