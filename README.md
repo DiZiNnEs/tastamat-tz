@@ -58,3 +58,6 @@ npx cap open ios
 
 ### Angular web application `(PM2 + Nginx)` - https://77.243.80.24/ (Самоподписанный SSL)
 ### Android APK - `android/app/build/outputs/apk/debug/app-debug.apk`
+
+## Gif APK
+![](https://github.com/DiZiNnEs/tastamat-tz/gif/result.gif)
