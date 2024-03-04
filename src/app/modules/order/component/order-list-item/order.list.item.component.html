@@ -1,4 +1,4 @@
-<ion-item [button]="true" [routerLink]="['/main/order', order.id]">
+<ion-item [button]="true" [routerLink]="['/main/order-single', order.id]">
   <ion-icon [color]="order.status ? 'primary' : 'success'" slot="start" size="large" [name]="order.status ? 'arrow-up-circle-outline' : 'arrow-down-circle-outline' "></ion-icon>
   <ion-label>
     <h5>{{order.name}}</h5>

@@ -2,11 +2,11 @@ import {Component, Input, OnInit} from '@angular/core';
 import {IonicModule} from "@ionic/angular";
 import {NgForOf} from "@angular/common";
 import {RouterLink} from "@angular/router";
-import {OrderListItemComponent} from "../order-list-item/order-list-item.component";
+import {OrderListItemComponent} from "../order-list-item/order.list.item.component";
 
 import * as dayjs from "dayjs";
 import 'dayjs/locale/ru'
-import {IOrder} from "../../../core/models/interfaces";
+import {IOrder} from "../../../../core/models/interfaces";
 
 @Component({
   selector: 'app-order-item',

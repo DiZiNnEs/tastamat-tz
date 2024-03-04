@@ -1,16 +1,16 @@
 import {Component, OnDestroy, OnInit,} from "@angular/core";
 import {IonHeader, IonTitle, IonToolbar} from "@ionic/angular/standalone";
-import {HeaderComponent} from "../../components/header/header.component";
+import {HeaderComponent} from "../../../core/components/header/header.component";
 import {IonicModule} from "@ionic/angular";
 import {ActivatedRoute} from "@angular/router";
-import {IHeaderOptions} from "../../core/models/interfaces";
+import {IHeaderOptions} from "../../../core/models/interfaces";
 
 
 
 @Component({
-  selector: 'app-order-page',
-  templateUrl: 'order.page.html',
-  styleUrls: ['order.page.scss'],
+  selector: 'app-order-single-page',
+  templateUrl: 'order.single.page.html',
+  styleUrls: ['order.single.page.scss'],
   imports: [
     IonHeader,
     IonToolbar,
@@ -20,7 +20,7 @@ import {IHeaderOptions} from "../../core/models/interfaces";
   ],
   standalone: true
 })
-export class OrderPage implements OnInit, OnDestroy{
+export class OrderSinglePage implements OnInit, OnDestroy{
   id = 0;
   private sub: any;
 

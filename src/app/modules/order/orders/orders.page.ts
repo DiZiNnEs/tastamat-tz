@@ -3,12 +3,12 @@ import {Component} from '@angular/core';
 import {addIcons} from 'ionicons';
 import {timeOutline, chevronForwardOutline, arrowUpCircleOutline} from 'ionicons/icons';
 
-import {HeaderComponent} from "../../components/header/header.component";
-import {OrderItemComponent} from "../../components/orders/order-item/order-item.component";
+import {HeaderComponent} from "../../../core/components/header/header.component";
+import {OrderItemComponent} from "../component/order-item/order-item.component";
 import * as dayjs from "dayjs";
 import {NgForOf} from "@angular/common";
 import {IonicModule} from "@ionic/angular";
-import {IHeaderOptions} from "../../core/models/interfaces";
+import {IHeaderOptions} from "../../../core/models/interfaces";
 
 @Component({
   selector: 'app-orders-page',

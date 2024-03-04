@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { OrderListItemComponent } from './order-list-item.component';
+import { OrderListItemComponent } from './order.list.item.component';
 
 describe('OrderListItemComponent', () => {
   let component: OrderListItemComponent;

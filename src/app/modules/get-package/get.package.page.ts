@@ -27,7 +27,7 @@ import {
   IonTitle,
   IonToolbar
 } from '@ionic/angular/standalone';
-import {ExploreContainerComponent} from "../../components/explore-container/explore-container.component";
+import {ExploreContainerComponent} from "../../core/components/explore-container/explore-container.component";
 import {basketballOutline} from "ionicons/icons";
 import {addIcons} from "ionicons";
 import {QrService} from "../../core/services/qr/qr.service";
