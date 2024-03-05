@@ -56,10 +56,10 @@ ion-content {
         border-left: 2px solid grey;
         div {
           display: flex;
-
           ion-text {
             p:before {
               content: '\229D';
+              font-weight: bold;
             }
           }
         }
@@ -99,21 +99,21 @@ ion-content {
           }
         }
       }
-
       ol {
-        //padding: 0;
+        padding-left: 0;
+        list-style-type: none;
       }
-
       .non-complete {
         padding-left: 0;
       }
       .complete {
-        //padding-right: 60px !important;
         display: block;
         list-style: none;
+        color: #26B923;
       }
       .complete:before {
-        content: " \2705";
+        content: " \2713";
+        color: #26B923;
       }
     }
 
