@@ -61,6 +61,7 @@ npx cap open ios
   #### https://158.160.120.136/
   #### https://77.243.80.24/
 ### Android APK - `android/app/build/outputs/apk/debug/app-debug.apk`
+### IOS build - `ios/*`
 
 ## Gif APK
 ![](https://github.com/DiZiNnEs/tastamat-tz/blob/master/gifs/result.gif)
