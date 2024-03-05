@@ -33,7 +33,7 @@ npm i @capacitor/android
 npx cap add android
 npx cap open android
 ```
-Более подробно - [ТЫК](https://capacitorjs.com/docs/android)
+Более подробней - [ТЫК](https://capacitorjs.com/docs/android)
 
 ### Запуск iOS:
 #### Сорри, MacOS нету : )
@@ -53,6 +53,7 @@ npm install @capacitor/ios
 npx cap add ios
 npx cap open ios
 ```
+Более подробней - [ТЫК](https://capacitorjs.com/docs/ios) 
 
 ## Deployment
 
